@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Conteneur principal centré */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+/* Style du panel */
+.panel {
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.panel-heading {
+    background-color: #6c757d; /* Gris similaire à la navbar */
+    color: #fff;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.panel-body {
+    padding: 15px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Style du formulaire */
+form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+    color: #333;
+}
+
+input[type="text"] {
+    padding: 8px;
+    font-size: 14px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+button.btn {
+    padding: 8px 15px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #6c757d; /* Gris similaire à la navbar */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.btn:hover {
+    background-color: #000009; /* Gris légèrement plus foncé pour le hover */
+}
+
+/* Style du tableau avec colonnes égales */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    table-layout: fixed;
+}
+
+.table th, .table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+    width: 25%;
+}
+
+.table th {
+    background-color: #6c757d; /* Gris similaire à la navbar */
+    color: white;
+    font-weight: bold;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tr:hover {
+    background-color: #e9ecef;
+}
+
+/* Style pour les messages d'erreur ou d'alerte */
+.text-danger {
+    color: rgb(0, 0, 160);
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+
+.table td a {
+    display: inline-block;
+    margin-right: 10px; /* Ajoute un espace entre les boutons */
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.table td a.btn-primary {
+    background-color: #72cb8a; /* Couleur bleue */
+}
+
+.table td a.btn-danger {
+    background-color: #f95b4a; /* Couleur rouge */
+}
+
+.table td a:hover {
+    opacity: 0.8; /* Effet visuel au survol */
+}

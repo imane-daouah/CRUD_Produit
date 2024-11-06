@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Conteneur principal */
+.container {
+    width: 50%; /* Ajustez la largeur selon vos besoins */
+    margin: 20px auto; /* Centre le conteneur et ajoute un espace en haut */
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+/* Style du panel */
+.panel {
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.panel-heading {
+    background-color: #6c757d; /* Couleur de fond gris */
+    color: #fff;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.panel-body {
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Champs de formulaire - Saisie produit */
+form {
+    display: flex;
+    flex-direction: column; /* Arrange les éléments verticalement */
+}
+
+.form-label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px; /* Espace en haut de chaque label */
+    margin-bottom: 5px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 15px; /* Espace entre les champs de saisie */
+}
+
+button.btn {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #6c757d; /* Gris similaire à la navbar */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.btn:hover {
+    background-color: #5a6268; /* Gris plus foncé pour le hover */
+}
+
+/* Style pour la confirmation */
+.form-group {
+    margin-bottom: 15px; /* Espace entre chaque ligne de confirmation */
+}
+
+.form-group label {
+    font-weight: bold;
+    display: inline-block;
+    width: 100px; /* Largeur fixe pour aligner les étiquettes */
+}
+
+.form-group div, .form-group span {
+    display: inline-block;
+    margin-left: 5px;
+}
